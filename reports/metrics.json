@@ -1,0 +1,82 @@
+{
+  "seed": 42,
+  "data": "Entirely synthetic make_classification, 12000 rows,12 features,95/5,flip_y=0.",
+  "split": {
+    "train": {
+      "rows": 7200,
+      "positive": 360
+    },
+    "validation": {
+      "rows": 2400,
+      "positive": 120
+    },
+    "test": {
+      "rows": 2400,
+      "positive": 120
+    }
+  },
+  "data_sha256": "8ee22036b5fc2c399a3cab275888ee488c1651c050861f03a3a947a8ebcd9200",
+  "validation_average_precision": {
+    "logistic": 0.38332051337885087,
+    "balanced_logistic": 0.2987515664779382,
+    "gradient_boosting": 0.835337560629473
+  },
+  "selected_model": "gradient_boosting",
+  "threshold": 0.09999999999999999,
+  "threshold_rule": "Max validation F2 over 0.01..0.99; model selected by validation AP. No test tuning.",
+  "test_selected": {
+    "average_precision": 0.8596396883999623,
+    "roc_auc": 0.9819480994152047,
+    "precision": 0.6455696202531646,
+    "recall": 0.85,
+    "f2": 0.799373040752351,
+    "accuracy": 0.9691666666666666,
+    "confusion_matrix": [
+      [
+        2224,
+        56
+      ],
+      [
+        18,
+        102
+      ]
+    ]
+  },
+  "test_default_threshold": {
+    "average_precision": 0.8596396883999623,
+    "roc_auc": 0.9819480994152047,
+    "precision": 0.9058823529411765,
+    "recall": 0.6416666666666667,
+    "f2": 0.6814159292035398,
+    "accuracy": 0.97875,
+    "confusion_matrix": [
+      [
+        2272,
+        8
+      ],
+      [
+        43,
+        77
+      ]
+    ]
+  },
+  "test_always_negative": {
+    "average_precision": 0.05,
+    "roc_auc": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f2": 0.0,
+    "accuracy": 0.95,
+    "confusion_matrix": [
+      [
+        2280,
+        0
+      ],
+      [
+        120,
+        0
+      ]
+    ]
+  },
+  "limitations": "Synthetic IID benchmark only. Not real fraud detection or a calibrated operational risk score."
+}

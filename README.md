@@ -54,7 +54,7 @@ Selected model: gradient boosting, threshold about 0.10.
 
 Selected confusion matrix, rows=actual negative/positive, columns=predicted negative/positive: `[[2224,56],[18,102]]`. Lowering the threshold catches 102 of 120 positives instead of 77, at the cost of 56 false positives instead of 8. An always-negative model looks good by accuracy but misses all positives. Average precision summarizes the precision-recall curve across thresholds; its value is not a classification accuracy percentage.
 
-![Precision recall curve](reports/precision_recall.png)
+Plot: `reports/precision_recall.png` inside the restored project package.
 
 ## Test and deployment status
 

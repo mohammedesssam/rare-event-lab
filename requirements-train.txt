@@ -1,0 +1,2 @@
+-r requirements.txt
+# Install the CPU-only PyTorch wheel separately; see README.
